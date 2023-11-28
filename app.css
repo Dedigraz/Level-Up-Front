@@ -1,0 +1,151 @@
+*{
+    font-family: 'Inter', sans-serif;
+/*Colors*/
+
+    /*Greys*/
+    --grey-50: #656266;
+    --grey-100: #616161;
+    --grey-200: #322F33;
+    --grey-300: #1C181D;
+
+    /* font color */
+    --font-light: #e3e3e3;
+    --font-mid: #616161;
+    --font-dark:#475467;
+
+    /* strokes color */
+    --s50:#ebebeb;
+    --s100:rgba(0,0,0,0.07);
+    --s200:rgba(255,255,255,0.2);
+
+    /*states color*/
+    --hover:#f7f7f7;
+    --pressed:#f0f0f0;
+    --focused:#005bd3;
+
+    /*plain color*/
+    --bg:#f1f1f1;
+    letter-spacing: 0;
+
+/*Fonts*/
+
+    /*light*/
+    --inter-12-regular:  12px/130% 400 "Inter", sans-serif;
+    --inter-12-medium:  12px/130% 500 "Inter", sans-serif;
+    --inter-12-semibold:  12px/130% 600 "Inter", sans-serif;
+    
+    /*medium*/
+    --inter-13-regular:  13px/140% 400 "Inter", sans-serif;
+    --inter-13-medium:  13px/140% 500 "Inter", sans-serif;
+    --inter-13-semibold:  13px/140% 600 "Inter", sans-serif;
+    
+    /*heavy*/
+    --inter-14-medium:  14px/140% 500 "Inter", sans-serif;
+    --inter-14-semibold:  14px/140% 600 "Inter", sans-serif;
+}
+html {
+  /* 10px */
+  font-size: 62.5%;
+}
+
+body {
+    /* 16px */
+    font-size: 1.6rem;
+
+    background: --bg;
+    margin: 0;
+  }
+  
+#container{
+    height: 100svh;
+    height:100vh;
+    width:100vw;
+    font: var(--inter-13-medium);
+}
+
+#navbar{
+    height:5svh;
+    height:5vh;
+    background: var(--grey-300);
+
+    padding-left: 10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding: 5px 10px 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+#navbar > svg{
+    margin: auto 0 auto 0;
+}
+
+#navbar > div{
+    display: flex;
+
+}
+
+#search-bar{
+    width:50%;
+    border-radius:8px;
+    border-width: 1px;
+    border-color: var(--s200);
+    background-color: var(--grey-200);
+    color:var(--grey-100);
+    font: var(--inter-13-medium);
+    margin:.2rem 0 .2rem 0;
+}
+#search-bar > form{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+}
+#search-bar > form > svg{
+    margin: auto  0 auto auto;
+    width: 2rem;
+    fill: var(--grey-100);
+}
+#search-bar > form >svg >path{
+    fill: var(--grey-100);
+}
+#search-field{
+    height:100%;
+    width: 92%;
+    margin:0;
+    border:none;
+    border-radius:8px;
+    font:var(--inter-13-medium);
+    background-color: var(--grey-200);
+    color:var(--grey-100);
+}
+
+#search-field:focus-visible{
+    outline: none;
+}
+
+#notification{
+    fill: #1C181D;
+    background-color: #1C181D;
+    border: none;
+    padding: 5%;
+    background-color: var(--grey-200);
+}
+
+#account-btn{
+    display: flex;
+    gap: 7px;
+    margin: auto 0 auto 0;
+    font: var(--inter-12-medium);
+    background-color: var(--grey-200);
+}
+#account-btn > div{
+
+}
+
+main{
+
+}
